@@ -14,6 +14,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AboutUsPageComponent } from './about-us-page/about-us-page.component';
 import { HomeComponent } from './home/home.component';
 import { FooterComponent } from './footer/footer.component';
+import { QuoteComponent } from './quote/quote.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { FooterComponent } from './footer/footer.component';
     NavbarComponent,
     AboutUsPageComponent,
     HomeComponent,
-    FooterComponent
+    FooterComponent,
+    QuoteComponent
   ],
   imports: [
     BrowserModule,
