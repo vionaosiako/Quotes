@@ -1,16 +1,15 @@
 <div>
     <ul>
-        <li>{{quotes.completeDate}}</li>
+        <li>{{quotes.completeDate|date}}</li>
     </ul>
     <ul class="insideQuote mt-3">
                    <br>
                    
                     <li> <span class="authorName ">{{  quotes.authorName }}</span></li>
-                    <li><mat-icon><span class="thumbUp"> thumb_up </span></mat-icon> {{ quotes.upvote }}</li>
-                    <li><mat-icon><span class="thumbDown"> thumb_down </span></mat-icon> {{ quotes.downvote }}</li>
+                    <app-upvote ></app-upvote>                  
                     <li>
-                        <!-- <button>Delete Quote</button> -->
-                        <button type="button" class="btn deleteBtn">Delete Quote </button>
+                        
+                        <button (click)="deleteBtn(true)" type="button" class="btn deleteBtn">Delete Quote </button>
                         
                     </li>
                 </ul>

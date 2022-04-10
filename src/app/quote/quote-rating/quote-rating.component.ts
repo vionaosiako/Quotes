@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, Output,EventEmitter } from '@angular/core';
 import { Quote } from 'src/app/quote';
 
 
@@ -10,6 +10,13 @@ import { Quote } from 'src/app/quote';
 export class QuoteRatingComponent implements OnInit {
 @Input()
 quotes!:Quote;
+
+@Output() isDeleted = new EventEmitter<boolean>();
+
+deleteBtn(complete: boolean){
+  this.isDeleted.emit(complete)
+}
+
   constructor() { }
 
   ngOnInit(): void {
