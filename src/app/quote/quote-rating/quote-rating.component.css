@@ -1,0 +1,24 @@
+.insideQuote{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.deleteBtn{
+    background-color: #4BB543;
+}
+.thumbDown{
+    color: #FF0000;
+}
+.thumbUp{
+    color: #17a2b8;
+}
+
+.showQuote{
+    font-size: large;
+}
+
+.authorName{
+    font-style: italic;
+    font-size: medium;
+}

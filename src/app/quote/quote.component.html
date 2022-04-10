@@ -1,19 +1,27 @@
-<div  class="showQuote text-center">
-    <h2>Find the Quotes</h2>
-    
-         <ul class="">
-            <div *ngFor='let quoteQuation of quotes; let i = index'>
-                <li appHighlight>
-                    <!-- <div *ngIf="quoteQuation.upvote ==; then highlight else empty"></div> -->
-                    <span>{{  quoteQuation.quoteContent }}</span>              
-                    <app-quote-rating [quotes]="quoteQuation"></app-quote-rating>
-                </li>
-                
-            </div> 
+<div class="row">
+    <div class="col-lg-6">
+        <div  class="showQuote text-center">
+            <h2>Find the Quotes</h2>
             
-        </ul>
+                 <ul class="">
+                    <div *ngFor='let quoteQuation of quotes; let i = index'>
+                        <li appHighlight>
+                            <!-- <div *ngIf="quoteQuation.upvote ==; then highlight else empty"></div> -->
+                            <span>{{  quoteQuation.quoteContent }}</span>              
+                            <app-quote-rating [quotes]="quoteQuation"></app-quote-rating>
+                        </li>
+                        
+                    </div> 
+                    
+                </ul>
+        </div>
+    </div>
+    <div class="col-lg-6">
+        <app-generate-quote (addQuote)="addNewQuote($event)"></app-generate-quote>
+    </div>
 </div>
-<app-generate-quote (addQuote)="addNewQuote($event)"></app-generate-quote>
+
+
 
 
 
