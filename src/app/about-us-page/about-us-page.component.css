@@ -1,0 +1,11 @@
+.aboutUsPage{
+    background-image: url(../../assets/homebg.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 80px;
+}
+
+.aboutUsContanet{
+    text-align: center;
+    font-size: large;
+}
