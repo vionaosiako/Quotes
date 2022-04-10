@@ -15,6 +15,7 @@ import { AboutUsPageComponent } from './about-us-page/about-us-page.component';
 import { HomeComponent } from './home/home.component';
 import { FooterComponent } from './footer/footer.component';
 import { QuoteComponent } from './quote/quote.component';
+import { QuoteRatingComponent } from './quote/quote-rating/quote-rating.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { QuoteComponent } from './quote/quote.component';
     AboutUsPageComponent,
     HomeComponent,
     FooterComponent,
-    QuoteComponent
+    QuoteComponent,
+    QuoteRatingComponent
   ],
   imports: [
     BrowserModule,
