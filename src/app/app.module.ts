@@ -17,6 +17,7 @@ import { FooterComponent } from './footer/footer.component';
 import { QuoteComponent } from './quote/quote.component';
 import { QuoteRatingComponent } from './quote/quote-rating/quote-rating.component';
 import { GenerateQuoteComponent } from './generate-quote/generate-quote.component';
+import { DateCountPipe } from './date-count.pipe';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { GenerateQuoteComponent } from './generate-quote/generate-quote.componen
     FooterComponent,
     QuoteComponent,
     QuoteRatingComponent,
-    GenerateQuoteComponent
+    GenerateQuoteComponent,
+    DateCountPipe
   ],
   imports: [
     BrowserModule,
