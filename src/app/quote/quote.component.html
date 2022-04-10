@@ -2,18 +2,27 @@
     <div class="col-lg-6">
         <div  class="showQuote text-center">
             <h2>Find the Quotes</h2>
-            
-                 <ul class="">
-                    <div *ngFor='let quoteQuation of quotes; let i = index'>
-                        <li appHighlight>
-                            <!-- <div *ngIf="quoteQuation.upvote ==; then highlight else empty"></div> -->
-                            <span>{{  quoteQuation.quoteContent }}</span>              
-                            <app-quote-rating [quotes]="quoteQuation"></app-quote-rating>
-                        </li>
-                        
-                    </div> 
-                    
-                </ul>
+
+            <ul *ngFor="let quoteQuation of quotes">
+                <div *ngIf="quoteQuation.upvote==highest && quoteQuation.upvote>0;then highlight else empty">                    
+                </div>
+
+                <ng-template #highlight>
+                    <li appHighlight>
+                        <span>{{  quoteQuation.quoteContent }}</span>              
+                        <app-quote-rating [quotes]="quoteQuation"></app-quote-rating>
+                    </li>
+                </ng-template>
+
+                <ng-template #empty>
+                    <li>
+                        <span>{{  quoteQuation.quoteContent }}</span>              
+                        <app-quote-rating [quotes]="quoteQuation"></app-quote-rating>
+                    </li>
+                </ng-template>
+
+
+            </ul>
         </div>
     </div>
     <div class="col-lg-6">
