@@ -16,6 +16,7 @@ import { HomeComponent } from './home/home.component';
 import { FooterComponent } from './footer/footer.component';
 import { QuoteComponent } from './quote/quote.component';
 import { QuoteRatingComponent } from './quote/quote-rating/quote-rating.component';
+import { GenerateQuoteComponent } from './generate-quote/generate-quote.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { QuoteRatingComponent } from './quote/quote-rating/quote-rating.componen
     HomeComponent,
     FooterComponent,
     QuoteComponent,
-    QuoteRatingComponent
+    QuoteRatingComponent,
+    GenerateQuoteComponent
   ],
   imports: [
     BrowserModule,
