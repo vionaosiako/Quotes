@@ -4,13 +4,13 @@
             <h2>Find the Quotes</h2>
 
             <ul *ngFor="let quoteQuation of quotes; let i = index">
-                <div *ngIf="quoteQuation.upvote==highest && quoteQuation.upvote>0;then highlight else empty">                    
+                <div *ngIf="highest()===quoteQuation.upvote && quoteQuation.upvote>0;then highlight else empty">                    
                 </div>
 
                 <ng-template #highlight>
                     <li appHighlight>
                         <span>{{  quoteQuation.quoteContent }}</span>              
-                        <app-quote-rating [quotes]="quoteQuation"></app-quote-rating>
+                        <app-quote-rating (isDeleted)="deleteBtn($event,i)"[quotes]="quoteQuation"></app-quote-rating>
                     </li>
                 </ng-template>
 
@@ -29,8 +29,3 @@
         <app-generate-quote (addQuote)="addNewQuote($event)"></app-generate-quote>
     </div>
 </div>
-
-
-
-
-

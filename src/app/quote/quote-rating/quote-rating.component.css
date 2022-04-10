@@ -16,3 +16,7 @@
     font-style: italic;
     font-size: medium;
 }
+
+.dateCreated{
+    list-style: none;
+}
