@@ -19,7 +19,7 @@ import { QuoteRatingComponent } from './quote/quote-rating/quote-rating.componen
 import { GenerateQuoteComponent } from './generate-quote/generate-quote.component';
 import { DateCountPipe } from './date-count.pipe';
 import { HighlightDirective } from './highlight.directive';
-import { UpvoteComponent } from './upvote/upvote.component';
+
 
 @NgModule({
   declarations: [
@@ -33,7 +33,6 @@ import { UpvoteComponent } from './upvote/upvote.component';
     GenerateQuoteComponent,
     DateCountPipe,
     HighlightDirective,
-    UpvoteComponent
   ],
   imports: [
     BrowserModule,

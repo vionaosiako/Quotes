@@ -17,6 +17,14 @@ deleteBtn(complete: boolean){
   this.isDeleted.emit(complete)
 }
 
+upvote(){
+  this.quotes.upvote++;
+}
+
+downvote(){
+  this.quotes.downvote++;
+}
+
   constructor() { }
 
   ngOnInit(): void {

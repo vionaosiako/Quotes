@@ -1,3 +1,9 @@
+.thumbDown{
+    color: #FF0000;
+}
+.thumbUp{
+    color: #17a2b8;
+}
 .insideQuote{
     list-style: none;
     display: flex;
@@ -19,4 +25,5 @@
 
 .dateCreated{
     list-style: none;
+    text-align: center;
 }

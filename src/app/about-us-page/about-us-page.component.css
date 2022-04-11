@@ -9,3 +9,9 @@
     text-align: center;
     font-size: large;
 }
+@media screen and(max-width:1053px){
+    
+    .mapShow{
+        display: none;
+    }
+}
