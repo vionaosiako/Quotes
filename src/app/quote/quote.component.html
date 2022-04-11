@@ -1,10 +1,9 @@
-<div class="row">
+<div class="row bg">
     <div class="col-lg-6">
         <h2 class="text-center">Find the Quotes</h2>
         
         <div  class="showQuote text-center">
-            <h2>Find the Quotes</h2>
-
+            
             <ul *ngFor="let quoteQuation of quotes; let i = index">
                 <div *ngIf="highest()===quoteQuation.upvote && quoteQuation.upvote>0;then highlight else empty">                    
                 </div>

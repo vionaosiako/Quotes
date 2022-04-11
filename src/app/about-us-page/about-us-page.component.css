@@ -9,6 +9,10 @@
     text-align: center;
     font-size: large;
 }
+h1{
+  font-size: 50px;
+  font-weight: bolder;
+}
 @media screen and(max-width:1053px){
     
     
